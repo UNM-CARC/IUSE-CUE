@@ -1,0 +1,34 @@
+%
+% NSF Proposal
+%
+\documentclass[11pt]{article}
+
+\input{includes}
+\author{}
+\date{}
+
+\begin{document}
+
+\cfoot{Desc-\thepage}
+\pagestyle{fancy}
+\addtolength{\baselineskip}{-1pt}
+\newpage
+\setcounter{page}{1}
+
+% Full Proposal
+\input{description/intro}
+\input{description/problem}
+\input{description/approach}
+\input{description/research}
+\input{description/evaluation}
+\input{description/impact}
+\input{description/prior}
+
+% Bibliography
+\newpage
+\cfoot{Ref-\thepage}
+\setcounter{page}{1}
+\bibliographystyle{plain}
+\bibliography{bridges.bib}
+
+\end{document}

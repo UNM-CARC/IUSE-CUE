@@ -1,0 +1,155 @@
+%\usepackage{fullpage}
+\usepackage{geometry}
+\geometry{
+  top=1.0in,            % <-- you want to adjust this
+  inner=1.0in,
+  outer=1.0in,
+  bottom=1.0in,
+  headheight=3ex,       % <-- and this
+  headsep=2ex,          % <-- and this
+}
+\usepackage{palatino,mathpazo}
+\usepackage{pgfgantt}
+\usepackage{times}
+\usepackage{xspace}
+\usepackage{wrapfig}
+\usepackage{caption}
+%\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{xcolor}     % For 'revision' marks in draft versions
+\usepackage{titlesec}
+\usepackage{caption}   % more control over caption settings (e.g. font)
+\usepackage{rotating}  % allow height=, etc. in graphics
+\usepackage{pdfpages}
+\usepackage{ifthen}
+\usepackage[plainpages=false]{hyperref}
+\usepackage{verbatim}
+\usepackage{listings}   % To pretty print code
+\usepackage{fancyvrb}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{fancyhdr}
+
+%\usepackage{babel}
+\usepackage{paralist, tabularx}
+
+\usepackage{enumitem} % help with spacing {AS}
+
+\usepackage{graphicx}  % \includegraphics defn
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\lstset{language= C}
+\lstset{framexleftmargin= 3mm, rulesepcolor= \color{black}}
+%\lstset{numberstyle=\tiny, numbers=left, numbersep= 5pt, xleftmargin= 12pt}
+\lstset{firstnumber= 1, stepnumber= 1}
+\lstset{showstringspaces= false}
+\lstset{gobble=0}
+\lstset{linewidth=\textwidth}
+\lstset{keepspaces= true}
+\lstset{showspaces= false}
+
+\hypersetup{colorlinks=false,
+        pageanchor=true,
+        pdfpagemode=None,
+        plainpages=false,
+        pdfview=FitH,
+        pdfstartview=FitH}
+
+\urlstyle{same}
+%\renewcommand\url{\begingroup\urlstyle{sf}\Url} % put url font in sf
+\renewcommand{\floatpagefraction}{0.8}
+\parindent=2.0em
+\advance\baselineskip by-1pt
+\parskip=0.1ex minus 0.1ex
+
+%Tight itemizes and enumerates
+\makeatletter
+\def\tightitemize{\ifnum \@itemdepth >3 \@toodeep\else \advance\@itemdepth
+\@ne
+\edef\@itemitem{labelitem\romannumeral\the\@itemdepth}%
+\list{\csname\@itemitem\endcsname}{\setlength{\topsep}{-\parskip}\setlength{\leftmargin}{\labelwidth}\setlength{\parsep}{0in}\setlength{\itemsep}{0in}\setlength{\parskip}{0in}\def\makelabel##1{\hss\llap{##1}}}\fi}
+\let\endtightitemize =\endlist
+\def\tightenumerate{%
+\ifnum \@enumdepth >\thr@@\@toodeep\else
+\advance\@enumdepth\@ne
+\edef\@enumctr{enum\romannumeral\the\@enumdepth}%
+\expandafter
+\list
+\csname label\@enumctr\endcsname
+{\setlength{\topsep}{-\parskip}\setlength{\parsep}{0in}\setlength{\itemsep}{0in}\setlength{\parskip}{0in}\usecounter\@enumctr\def\makelabel##1{\hss\llap{##1}}}%
+\fi}
+\let\endtightenumerate =\endlist
+
+\titlespacing{\paragraph}{0pt}{*1}{*3}
+
+%Control whether comments render or not in the generated .pdf
+\newboolean{draft}
+\setboolean{draft}{true}
+\ifthenelse{\boolean{draft}}
+{
+  \newcommand{\pgb}[1]{\textcolor{orange}{[PGB: #1]}}
+  \newcommand{\as}[1]{\textcolor{green}{[AS: #1]}}
+  \newcommand{\msf}[1]{\textcolor{blue}{[MSF: #1]}}
+  \newcommand{\mgfd}[1]{\textcolor{purple}{[MGFD: #1]}}
+  \newcommand{\editmark}{\marginpar{\colorbox{yellow}{\sf Update}}}
+  \newcommand{\reminder}[1]{\textcolor{red}{\textit{\textsc{#1}}}}
+}
+{
+  \newcommand{\pgb}[1]{}
+  \newcommand{\as}[1]{}
+  \newcommand{\msg}[1]{}
+  \newcommand{\mgfd}[1]{}
+  \newcommand{\editmark}{}
+  \newcommand{\reminder}[1]{}
+}
+
+\rhead{}
+\chead{}
+\lhead{}
+\rhead{NSF Proposal Header Title}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\nhalf}{$N_\frac{1}{2}$}
+
+\newcommand{\smartincludepdf}[3]{
+      % Set headers and TOC entry
+      \markright{#1}
+
+      \IfFileExists{#2.pdf}{
+         % Use fancy page style to put headers and page numbers on the
+         % included pages for easier navigation.  With luck, the included
+         % pages will not overlap these marks.
+        \addcontentsline{toc}{section}{\numberline {}#1}
+         \includepdf[pages=-,pagecommand={\thispagestyle{#3}}]{#2}
+      }{
+         % If the desired PDF file doesn't exist, warn about it but continue
+        \addcontentsline{toc}{section}{\numberline {}#1 {\color{red}*** MISSING! ***}}
+         \begin{center}
+            \textbf{\color{red}\Large No file found for '#1'!\\
+                    Tried #2.tex and #2.pdf} \\
+         \end{center}
+      }
+}
+
+\hyphenation{sto-chas-tic} \pagestyle{plain}
+
+\def\I{{I}}
+\def\Tc{{T_{compute,}}}
+\def\Ti{{T_{interference,}}}
+\def\Te{{T_{execution,}}}
+\def\p{\epsilon}
+\def\pp{\phi}
+\def\fc{{f_{c}}}
+\def\ff{{f_{int}}}
+\def\fe{{f_{e}}}
+\def\FX{{F_{X_P}}}
+\def\Fe{{F_e}}
+\def\X{{X}}
+\def\J{{J}}
+\def\FXb{{F_{\Te|\Ti_1}}}
+\def\Tes{{T_{execution}}}
+
+\input{mymacros}

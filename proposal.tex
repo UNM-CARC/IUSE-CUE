@@ -1,0 +1,141 @@
+%
+% NSF Proposal
+%
+\documentclass[11pt]{article}
+\usepackage{multicol}
+
+\input{includes}
+\author{}
+\date{}
+
+\begin{document}
+
+\cfoot{Desc-\thepage}
+\pagestyle{fancy}
+\addtolength{\baselineskip}{-1pt}
+\newpage
+\setcounter{page}{1}
+
+% Full Proposal
+
+\noindent{\Large{\bf Project Title:} CRI: II-EN: Research Infrastructure for Continuous Analysis of High-Intensity Data Streams }
+
+\noindent{\Large{\bf Project Type:} II-EN}
+
+\noindent{\Large{\bf APPROVED PRELIMINARY PROPOSAL CURRENTLY UPLOADED AS PLACEHOLDER FOR DESCRIPTION IN DEVELOPMENT}}
+
+\section*{Project Personnel}
+\subsection*{Lead Institution:}
+
+\begin{minipage}{6in}
+\begin{multicols}{2}
+\begin{itemize}
+\item Prof.~Patrick G. Bridges; PI
+\item Prof.~Jedidiah Crandall; Co-PI
+\item Prof.~Trilce Estrada; Co-PI
+\item Prof.~Abdulluh Mueen; Co-PI
+\item Prof. Marios Pattichis; Co-PI
+\item Hussein Al-Azzawi; Senior Personnel
+\end{itemize}
+\end{multicols}
+\end{minipage}
+
+\vspace*{0.1in}
+\paragraph{Institutions submitting collaborative proposals:} No Collaborative Institutions
+
+\paragraph{Other Collaborators:} No External Collaborators
+
+\vspace*{0.2in}
+\noindent{\Large{\bf CISE core division:} CNS, CCF}
+
+\vspace*{0.1in}
+\noindent{\Large{\bf Projected budget total:} \$616,956}
+
+\vspace*{0.1in}
+\noindent{\Large{\bf Keywords:} Streaming data analysis, computer systems and networks, machine learning}
+
+\vspace*{0.1in}
+\section{Infrastructure to be developed/deployed}
+
+We propose to acquire enhance existing cyber-infrastructure to support novel computer science research 
+into online analysis of large-scale heterogeneous data and systems, particularly continuous
+analysis of high-intensity data streams. The proposed system will augment existing storage and networking
+infrastructure for data analysis offline with diverse networking, computational, and storage capabilities; 
+storage diversity is particularly important given the wide range of research the system will support. 
+The system will include a combination of many-core computing nodes, high-bandwidth parallel storage, 
+low-latency non-volatile storage, and high-reliability enterprise storage to support, respectively,
+high-speed analysis, buffering large amounts in-flight data, caching reference data sets, and preserving 
+key results and supporting data. 
+
+We specifically propose to enhance existing near-line storage/high-speed networking
+infrastructure with:
+\begin{itemize}
+\item Additional high-speed networking connectivity to facilitate handling additional data streams;
+\item 500TB of high-speed InfiniBand-connected parallel file and object storage;
+\item 50TB of all-flash or other non-volatile, low-latency storage;
+\item 100TB of enterprise-grade storage;
+\item 4 many-core cluster computing nodes (for example Intel Xeon Phi Knight's Mill or NVIDIA P100 GPU systems); and
+\item 5 years of UNM computer services support for the acquired systems.
+\end{itemize}
+
+\section{CISE Research Focus}
+
+Supported CISE research will focus on the continuous analysis of high-intensity 
+streaming data sources, including locally and regionally generated data sets. 
+Research in handling and extracting research insights from the deluge of available data
+is pervasive across CISE in areas such as computer system 
+design and optimization, network analysis, social media analysis, and 
+machine learning. The project PIs perform CISE-related research in each of these areas,
+that require high-speed computational analysis of large amounts of streaming data.
+
+Prof.~Patrick G. Bridges will lead this project both in his capacity as Director of the
+UNM Center for Advanced Research Computing (CARC), which will house and support the
+infrastructure, and as a CISE researcher. In the first role, Prof.~Bridges will 
+oversee the specification, acquisition, installation, and support of the resulting 
+infrastructure in collaboration with other project PIs. The project will support Prof.~Bridges's 
+research on the optimization of HPC and Big Data applications and system software,
+research which requires the analysis of streaming performance data from 
+large-scale computing systems.
+
+Co-PIs Crandall, Estrada, Mueen, and Pattichis will leverage the system to support their 
+respective research in analysis of streaming data. PI Crandall's research in this area
+focuses on using side-channel network analysis techniques to discover and map hidden
+Internet features. His current research uses the existing infrastructure for the offline analysis
+of network traces to infer network characteristics; the proposed enhancement will enable
+continuous online analysis of these characteristics. PI Estrada's and Pattichis's research 
+focuses on machine learning abstractions for the modeling and analysis of scientific and 
+imaging data; a 100+TB medical forensics image database currently being assembled at CARC 
+is one data-set of interest for this research. PI Mueen's research focuses on the long-term 
+analysis of multiple complex social media data streams, including novel bot detection 
+techniques in Twitter data streams.
+
+Ongoing technical support for the infrastructure will be provided by CARC staff 
+member Hussein Al-Azzawi under the supervision of Prof.~Bridges. Mr. Al-Azzawi 
+currently supports the existing storage and networking infrastructure that will
+be enhanced.
+
+\section{Sample Research Project}
+Prof.~Patrick Bridges's research will leverage the acquired infrastructure to 
+research the optimization of resource allocation in large-scale and strategic computing systems 
+using high-fidelity stochastic application performance models. These models of HPC and 
+Big Data applications are developed by analyzing streams of communication and processor 
+performance samples from running computational systems; the resulting models are used 
+to optimize and adapt resource allocation in running systems.
+
+\section{Relevance to CISE}
+
+Each of the project PIs (Bridges, Crandall, Estrada, Mueen, and Pattichis) are established
+CISE researchers who will, as described above, provide continual feedback on the development
+and deployment of the infrastructure. The resulting infrastructure will benefit CISE research
+communities in computer systems research, computer networking, parallel and distributed computing, 
+machine learning, image analysis, and intelligent systems. The existing storage/networking system that 
+will provide the foundation for this award was acquired in 2015 under CNS award 1518878.
+ 
+% Bibliography
+%\newpage
+%\cfoot{Ref-\thepage}
+%\setcounter{page}{1}
+%\bibliographystyle{plain}
+%\bibliography{refs.bib}
+
+\end{document}

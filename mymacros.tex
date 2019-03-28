@@ -1,0 +1,182 @@
+\newcommand{\spp}{\vspace{1.5ex}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bdm}{\begin{displaymath}}
+\newcommand{\edm}{\end{displaymath}}
+
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\beas}{\begin{eqnarray*}}
+\newcommand{\eeas}{\end{eqnarray*}}
+
+\newcommand{\sbea}{\nopagebreak[3]\samepage\begin{eqnarray}}
+\newcommand{\seea}{\end{eqnarray}\pagebreak[0]}
+\newcommand{\sbeas}{\nopagebreak[3]\samepage\begin{eqnarray*}}
+\newcommand{\seeas}{\end{eqnarray*}\pagebreak[0]}
+
+\def\intii{\int_{-\infty}^\infty}
+\def\intzi{\int_0^\infty}
+\def\dint{\mathop{\int\!\!\int}\limits}
+
+\def\lb{\label} % WARNING don't use \let here;
+%                 it interferes with dlabels.sty
+\newcommand{\er}[1]{{\rm(\ref{#1})}}
+\newcommand{\sler}[1]{{\sl(\ref{#1})}}
+\newcommand{\nr}[1]{{\rm\ref{#1}}}
+\newcommand{\slnr}[1]{{\sl\ref{#1}}}
+\newcommand{\rmbox}[1]{\mbox{\rm #1}}
+
+\let\la=\langle
+\let\ra=\rangle
+
+\def\ebox{\raisebox{-.24ex}{\mbox{\large$\Box$}}}
+\def\QED{\hfill\ebox}
+\def\eQED{\gdef\@eqnnum{\ebox}}
+\def\fix{\gdef\@eqnnum{{{\rm (\theequation)}}}\addtocounter{equation}{-1}}
+
+\def\mycircs{\raisebox{.123ex}{\hspace*{.05em}$\scriptstyle\bigcirc$}}
+\def\nstwepts{{\mbox{\scriptsize$\not\mathrel{\kern-.9pt\mycircs}$}}}
+
+\def\mycircd{\raisebox{.08ex}{\kern-.02em\footnotesize$\bigcirc$}}
+\def\nstweptd{{\mbox{$\not\mathrel{\mycircd}$}}}
+
+\def\nstwept{{\mathchoice\nstweptd\nstweptd\nstwepts\nstwepts}}
+
+%\def\nstenpt{{\mbox{$\not\mathrel{\raisebox{.2pt}{\kern-.5pt\mycircd}}$}}}
+\let\nstenpt=\nstwept
+
+\let\ns=\nstwept
+
+% tenpt footnotesize \ns 
+\def\nsft{\mbox{\scriptsize$\not\mathrel{\kern-.9pt\mycircs}$}}
+
+\def\bgz{\makebox[0pt][c]{\huge 0}}
+
+\def\conv{\mathop{\raisebox{-.15ex}{$\ast$}\kern-.62em{\scriptstyle\bigcirc}}}
+
+\def\indep{\mathop{\bot\kern-.6em\bot}}
+
+\def\DIC{{\hbox{\rm\kern.2em\raise.36ex%
+\hbox{$\scriptstyle |$}\kern-.4em C}}}
+\def\SIC{{\hbox{\scriptsize\rm\kern.2em\raise.4ex%
+\hbox{$\scriptscriptstyle |$}\kern-.4em C}}}
+\def\IC{{\mathchoice\DIC\DIC\SIC\SIC}}
+
+\def\DIQ{{\hbox{\rm\kern.2em\raise.4ex%
+\hbox{$\scriptstyle |$}\kern-.4em Q}}}
+\def\SIQ{{\hbox{\scriptsize\rm\kern.2em\raise.4ex%
+\hbox{$\scriptscriptstyle |$}\kern-.4em Q}}}
+\def\IQ{{\mathchoice\DIQ\DIQ\SIQ\SIQ}}
+
+\def\IR{{\rm I\!R}}
+\def\IP{{\rm I\!P}}
+\def\IE{{\rm I\!E}}
+\def\IN{{\rm I\!N}}
+\def\Ind{{\bf 1}}
+
+\def\DZZ{{\hbox{\sf Z\kern-.41em Z}}}
+\def\SZZ{{\hbox{\scriptsize\sf Z\kern-.41em Z}}}
+\def\ZZ{{\mathchoice\DZZ\DZZ\SZZ\SZZ}}
+\let\IZ=\ZZ
+
+\def\bE{{\sf E}}
+\def\bEf{\hbox{\footnotesize\sf E}}
+\def\bP{{\sf P}}
+%\def\sP{\hbox{\kern-.15em\raise.5ex\hbox{\large$\wp$}}}
+\def\sP{\hbox{\kern-.05em\raise.5ex\hbox{\large$\wp$}}}
+\def\sPf%
+{\hbox{\kern-.05em\raise.5ex\hbox{\normalsize$\wp$}}} % \footnotesize \sP
+\def\Pr{{\rm Pr}}
+\def\sB{{\cal B}}
+\def\sF{{\cal F}}
+\def\sG{{\cal G}}
+
+%\def\de{  \buildrel {\rm \bigtriangleup} \over = }
+\def\de{\buildrel{\scriptscriptstyle\bigtriangleup}\over=}
+\def\cde{\mathrel{:=}}
+\def\dec{\mathrel{=:}}
+\let\oliminf=\liminf
+\let\olimsup=\limsup
+\def\lim@sup{\mathop{\overline{\rm lim}}}
+\def\lim@inf{\mathop{\underline{\rm lim}}}
+\let\limsup=\lim@sup
+\let\liminf=\lim@inf
+\def\argmin{\mathop{\rm argmin}}
+\def\argmax{\mathop{\rm argmax}}
+\def\mspan{\mathop{\rm span}\nolimits}
+\def\tr{\mathop{\rm tr}\nolimits}
+\def\re{\mathop{\rm Re}\nolimits}
+\def\im{\mathop{\rm Im}\nolimits}
+\def\sgn{\mathop{\rm sgn}\nolimits}
+\def\co{\mathop{\rm co}\nolimits}
+\def\cl{\mathop{\rm cl}\nolimits}
+\def\clco{\overline{\co}}
+\let\downto=\downarrow
+
+\def\Dbt{{\raisebox{-.8ex}{\mbox{\LARGE\sf X}}}}
+\def\Dpbt{{\raisebox{-.4ex}{\mbox{\large\sf X}}}}
+\def\Sbt{{\raisebox{-.4ex}{\mbox{\sf X}}}}
+\def\bigtimes{\mathop{\mathchoice\Dbt\Dpbt\Sbt\Sbt}}
+
+\def\ds{\displaystyle}
+\def\ts{\textstyle}
+%\def\lrt{\mathop{\raisebox{-.5ex}{$\buildrel{\ds >}\over<$}}}
+%\def\LRT{\ds {{{H_1} \atop {\ds >}} \atop {{\ds <} \atop {H_0}}}}
+\def\LRT#1#2{\ds {{{#1} \atop {\ds >}} \atop {{\ds <} \atop {#2}}}}
+
+\def\mx{{\rm max}}
+\def\mn{{\rm min}}
+\def\crs{\times}
+\def\half{{\textstyle{ 1 \over 2}}}
+\def\ninv{(1/n)}
+
+\def\same{\rule{2.3em}{0.3pt}\,, }
+
+\def\f@left#1{\makebox[0pt][l]{$\displaystyle#1$}}
+% \def\f@oleft[#1]#2{\makebox[0pt][l]{\hspace*{-#1}$\displaystyle#2$}}
+\def\f@oleft[#1]#2{\makebox[0pt][l]{$\displaystyle#2$}\hspace*{#1}}
+\def\lefteqn{\@ifnextchar[{\f@oleft}{\f@left}}
+
+\def\eqbox#1#2{\makebox[#1]{$\displaystyle#2$}}
+
+\let\refsize=\small
+\def\call#1{}
+\def\singlespace{}
+
+\outer\def\fl{\@ifnextchar[{\@opfl}{\@fl}}
+\def\@opfl[#1]#2{\fl@{#1}{#2}}
+\def\@fl#1{\fl@{-2.5ex}{#1}}
+\def\fl@#1{}
+\def\UC{}
+
+%--------------------------------------------------------------------
+%
+% Define my version of \mathpalette.  Example:  \def\bx{\pal{\bf x}}
+%
+\def\pal#1{{\mathchoice{#1}{#1}{\hbox{\scriptsize#1}}{\hbox{\tiny#1}}}}
+%
+% If font does not exist in \tiny size, use \pals instead.
+% Example: \def\sX{\pals{\sf X}}
+%
+\def\pals#1{{\mathchoice{#1}{#1}{\hbox{\scriptsize#1}}{\hbox{\scriptsize#1}
+}}}
+%--------------------------------------------------------------------
+\iftrue
+\def\optlist{}
+
+\def\list#1#2{\ifnum \@listdepth >5\relax \@toodeep
+     \else \global\advance\@listdepth\@ne \fi
+  \rightmargin \z@ \listparindent\z@ \itemindent\z@
+  \csname @list\romannumeral\the\@listdepth\endcsname
+  \def\@itemlabel{#1}\let\makelabel\@mklab \@nmbrlistfalse #2\optlist\relax
+  \@trivlist
+  \parskip\parsep \parindent\listparindent
+  \advance\linewidth -\rightmargin \advance\linewidth -\leftmargin
+  \advance\@totalleftmargin \leftmargin
+  \parshape \@ne \@totalleftmargin \linewidth
+  \ignorespaces}
+
+
+\def\mylabel#1{\def\@itemlabel{#1}}
+\fi
+%--------------------------------------------------------------------
