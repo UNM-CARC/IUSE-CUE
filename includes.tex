@@ -89,18 +89,18 @@
 \setboolean{draft}{true}
 \ifthenelse{\boolean{draft}}
 {
-  \newcommand{\pgb}[1]{\textcolor{orange}{[PGB: #1]}}
-  \newcommand{\as}[1]{\textcolor{green}{[AS: #1]}}
-  \newcommand{\msf}[1]{\textcolor{blue}{[MSF: #1]}}
-  \newcommand{\mgfd}[1]{\textcolor{purple}{[MGFD: #1]}}
+  \newcommand{\patrick}[1]{\textcolor{orange}{[PATRICK: #1]}}
+  \newcommand{\ep}[1]{\textcolor{green}{[ENRICO: #1]}}
+  \newcommand{\dws}[1]{\textcolor{blue}{[DONGWAN: #1]}}
+  \newcommand{\selena}[1]{\textcolor{purple}{[SELENA: #1]}}
   \newcommand{\editmark}{\marginpar{\colorbox{yellow}{\sf Update}}}
   \newcommand{\reminder}[1]{\textcolor{red}{\textit{\textsc{#1}}}}
 }
 {
   \newcommand{\pgb}[1]{}
-  \newcommand{\as}[1]{}
-  \newcommand{\msg}[1]{}
-  \newcommand{\mgfd}[1]{}
+  \newcommand{\ep}[1]{}
+  \newcommand{\dws}[1]{}
+  \newcommand{\selena}[1]{}
   \newcommand{\editmark}{}
   \newcommand{\reminder}[1]{}
 }
