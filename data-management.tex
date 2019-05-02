@@ -1,1 +1,53 @@
-\patrick{Drop in cybertraining data management plan here.}
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\input{includes}
+
+\cfoot{DMP-\thepage}
+\pagestyle{fancy}
+\setcounter{page}{1}
+
+\begin{document}
+
+\begin{center}
+{\Large\sc\bf Data Management Plan}
+\end{center}
+
+\label{sec:dmp}
+
+\subsection*{Roles and
+responsibilities}\label{roles-and-responsibilities}
+
+Responsibility for tracking compliance with this data management plan will ultimately lie with the lead institution UNM and project PI (Patrick Bridges), with senior project personnel playing key roles associated with the collection, management, sharing and preservation of project products. PI Bridges will oversee collection of training materials with support from UNM Libraries institutional personnel, and assessment lead Amir Heydayati will oversee most data collection, including supervising the student employee collecting and collating primary data. In the event of changes in senior project personnel, successor personnel will assume the above described responsibilities.  
+
+\subsection*{Expected data}\label{expected-data}
+
+Two broad classes of products will be created by the proposed work: 1) newly created or modified training materials, and 2) data collected as part of the assessment of the effectiveness of developed, modified and delivered training. 
+
+The training materials will be generated in a variety of formats including source files written in markdown (ASCII text) with generated products (based upon the Open Source Pandoc document converter \footnote{https://pandoc.org}) including HTML5 web pages, HTML5-based Powerpoint style presentations, PDF files, LaTeX source files, and Microsoft Word (DOCX) files. Additional training materials will be developed as Microsoft Powerpoint slide shows, screencasts recorded as MP4 video files, Jupyter and R Notebooks, and as exemplar programming code that adopts current documentation standards appropriate for the selected languages (e.g. python, R, Matlab, shell scripts). To the extent practical (i.e. based on file size limitations and utility of Git version control for binary files), developed or modified training materials will be maintained within the Git version control system, with collaborative development supported through UNM's instance of GitLab \footnote{https://lobogit.unm.edu} and through GitHub. In cases where externally developed materials are adapted for use by the project, those materials will be managed and used in a manner consistent with the license terms and related requirements from the originators of the materials. 
+
+Assessment data will be collected through a combination of online surveys and interviews. The online surveys will produce tabular data that will be initially exported as Excel spreadsheets that will then be converted to CSV files that can be imported into analytic tools such as R and python for quantitative analysis and NVIVO for qualitative analysis. Interviews will be documented through written notes and audio recordings (as MP3 files), which will then be transcribed for analysis in NVIVO (or similar qualitative analysis tools).
+
+\subsection*{Period of data retention}\label{period-of-data-retention}
+
+Training materials developed or modified by the project will be developed and shared within a public Git repository and will be available for comment (through issues submitted through the public repository), duplication (through forking), and proposed updates (through pull requests). In cases where modified materials are maintained within separate version control systems, use of those systems will be integrated the plan for dissemination and sharing of those materials. 
+
+Developed assessment instruments will be released (see below for specific release platforms and strategies) upon initial use, with updates to those instruments released upon their use. When reports and publications based upon collected assessment data are released, the corresponding data and collection instruments will be released as well - subject to confidentiality requirements defined within the project IRB protocol. In the absence of publications and reports that trigger the release of data and instruments, newly collected assessment data (again in compliance with the project's IRB protocol) will be released at the end of the project.
+
+\subsection*{Data format and
+dissemination}\label{data-format-and-dissemination}
+
+The training materials developed by the project will be shared and preserved in both their source form (markdown, source code, notebook formats) and in accessible derived formats (DOCX, PDF, Powerpoint, self-contained HTML5) that support straightforward modification, reuse, and preservation. Assessment materials will be similarly shared and preserved in formats (PDF, DOCX, CSV) that enable streamlined modification, reuse, and preservation. 
+
+Assessment data will be shared to the maximum extent possible within the confidentiality requirements defined within the project's IRB protocol. Those data will be shared in tabular ASCII text formats (CSV, XML, or JSON - depending upon the specific structural requirements of specific datasets) that maximize potential reuse and preservation. Data that cannot be shared will be nonetheless preserved in encrypted form within UNM's dark archive in compliance with New Mexico research record retention requirements. In all cases ASCII text data dictionaries and associated descriptive metadata will be developed in conjunction with the project assessment data. To the maximum extent possible this metadata generation will be accomplished through automated capture processes. When not automatable, metadata creation will be completed in parallel with data creation and analysis. 
+
+To maximize reuse and potential impact all shared training products, assessment instruments, and assessment data will be shared under the Creative Commons Attribution license \footnote{Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/}. In cases where an Open Source software license is more appropriate (for example for sample code used in training sessions) than the Creative Commons license, the permissive Apache 2.0 \footnote{https://www.apache.org/licenses/LICENSE-2.0} will be applied to those products. While the project team will retain intellectual property rights over developed materials, the application of the above licenses will maximize the reuse and potential impact of these products. 
+
+\subsection*{Data storage and preservation of
+access}\label{data-storage-and-preservation-of-access}
+
+Training materials, assessment instruments, and data will be archived for a minimum of 10 years at the UNM Libraries’ Digital Repository after the grant ends. After this time, the data will be appraised per established collection and archival management policies for transfer to an external repository, longer-term archiving, or alternative disposition. The UNM Digital Repository is an Open Archives Initiative (OAI) compliant repository, which enables Dublin Core metadata and dataset objects to be shared and harvested by other archival and discovery systems through the OAI-PHM protocol.
+ 
+The UNM Digital Repository is maintained by the UNM Libraries. Archive staff will also provide daily file integrity and format verification and will create and maintain technical and administrative metadata using the widely adopted Metadata Encoding and Transmission Standard and Preservation Metadata Implementation Strategies metadata standards. These additional metadata include digital file signatures and checksums for bitwise integrity validation and chain of custody documentation. Primary responsibility for curating and preparing the data for archiving will rest with the Libraries’ Data Curation Librarian.
+
+
+\end{document}
