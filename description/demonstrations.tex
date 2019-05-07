@@ -1,46 +1,85 @@
 \section{New Mexico CUE Framework Demonstrations}
 \label{sec:pilots}
 
-To research and evaluate the effectiveness of the approach described in the previous sections, we will pilot the use of our proposed educational framework in multiple disciplines at each participating institution. In most cases, these disciplines are largely independent so that we can assess the needs of a wide range of disciplines. However, we have also chosen two related but not identical disciplines (criminology and criminal justice) t better asseses how more modest differences in disciplinary and student need impact the educational requirements of X + CS programs.
+To research and evaluate the effectiveness of the approach described in the previous sections, we will pilot the use of our proposed educational framework in multiple disciplines at each participating institution. We chose a diverse set of disciplines across the institutions to assess the varying needs of the disciplines. However, we have also chosen two related but not identical disciplines (criminology and criminal justice) to better assesses how more modest differences in disciplinary and student need impact the educational requirements of X + CS programs. 
+Table~\ref{tab:pilots} summarizes how each program will integrate the framework described in Section~\ref{sec:approach} into its curriculum. 
+\begin{table}[tbhp]
+\begin{tabular}{|p{1in}|p{1.75in}|p{1.5in}|p{1.5in}|}
+\hline
+\hline
+     Institution/ & \multicolumn{2}{c|}{Planned Integration in existing courses} & Proposed New Courses\\ 
+     \cline{2-3}
+     Discipline   & Course Modules & Discipline Projects                   & \\
+     \hline\hline
+     \textbf{UNM} & & &  \\  
+     \hline
+     Chemical and Biological Engineering 
+                & CBE101 Intro.\ to Chem.\ and Bio.\ Engineering
+                
+                  CBE253 Chem.\ and Bio. Engineering Computing
+                  
+                  CBE317 Numerical Methods for Chem.\ and Bio.\ Eng.
+                & CS108 Introduction to Computational Science and Modeling
+                
+                  CBE451 Senior Seminar (Capstone)
+                &\\
+     \hline
+     Crimiology & SOC205 Crime, Public Policy, and Crim.\ Justice
+     
+                  SOC380 Introduction to Research Methods 
+                  
+                  SOC381 Soc Data Analysis
+                  
+                  SOC481 Data Analysis
+                & CS108 Introduction to Computational Science and Modeling
+                
+                  CS485 Introduction to Big Data (Capstone)
+                & Note: SOC380, SOC381, and SOC481 will initially be offered as specialized sections for Criminology + CS students\\
+     \hline\hline
+     \textbf{NMSU} & & & \\
+     \hline
+     Criminal Justice & 
+                      & 
+                      & Data Analytics for Criminal Justice 1
+                      
+                        Data Analytics for Criminal Justice 2 \\
+     \hline
+     Nursing & & & \\
+    \hline\hline
+     \textbf{NMT} & & & \\                 
+     \hline
+     Business Tech.\ \& Management & & & \\
+     \hline
+     Psychology & & & \\
+\hline\hline
+\end{tabular}
+\caption{Framework Demonstartion Integrations by Institution/Discipline}
+\label{tab:pilots}
+\end{table}
 
-\subsection{Criminology and Criminal Justice}
-\label{sec:demo:crim}
+\paragraph{Criminology and Criminal Justice:} As mentioned above, we explicitly chose to examine the integration of computer science education into crimoinology/sociology at UNM and criminal justice at NMSU to leverage the similarities \emph{and} differences of the two discipline. UNM is integrating the framework primarily as course modules and strands into existing Sociology and CS courses, while NMSU will research using a combination of existing and new classes. All classes will will also include significant ethics components in appropriate course modules. Lectures, guest speakers, projects, and modules in these classes will be focused on helping students think through the real-world application of big data questions in a range of criminological settings (law enforcement, probation/parole/courts/juvenile justice/social welfare) and its potential substantive and ethical utility and challenges.
 
-As mentioned above, we explicitly chose to examine the integration of computer science education into crimoinology/sociology at UNM and criminal justice at NMSU to leverage the similarities \emph{and} differences of the two discipline. Doing so will allow us to better assess the strengths and weaknesses of different approaches to integrating the overall NMIX+CS approach into STEM curricula. For example, both disciplines often analyze qualitative and quantitative crime data to inform public policy decision making, but the goals of these analyses (XXX vs. YYY) may differ significantly. In addition, the two departments and institutions have somewhat different curricular structures. 
+\paragraph{Nursing:}
+\textcolor{blue}{(from Huiping/Son)}
+At NMSU, we will offer an introductory computer and an health informatics course for nursing students. 
 
-We will integrate the NMIX+CS curriculum into the UNM criminology and NMSU criminal justice curriculim with a focus on the use of computational analysis of structured and unstructured data. In both cases, the integration will begin through course modules in introductory criminology/criminal justice classes starting with UNM's SOC XXX YYY class and NMSU's XXX class. These students will take foundational computer science coursework using UNM's CS 108 and NMSU's computer science that are part of each institution's core science curriculum.  Building on this, UNM students will then take approximately 4 expertise building strands across prototype sections of 3 existing sociology research methods classes. NMSU students will instead take the same 3 strands in a single NMSU ``Computing in Criminology'' course. 
-Finally, students at both institutions will complete a capstone design project in criminology and/or criminal justice in each institution's senior-level Introduction to Big Data computer science elective class. 
+The introductory computer course will provide understanding of how computers work, and practical application and programming experience in using computers to solve problems. It will cover broad aspects of the hardware and software of computers. Labs will be developed stressing the use of computers in investigating and reporting on data-intensive scientific problems. Experiences in  major software applications includes an introduction to programming, word processing, spreadsheets, databases, presentations, and Internet applications will be emphasized. This course will leverage on the existing General Education Computer Science course (CS171) course at NMSU.    
 
-Each of these classes will also include significant ethics components in appropriate course modules. Lectures, guest speakers, projects, and modules in these classes will be focused on helping students think through the real-world application of big data questions in a range of criminological settings (law enforcement, probation/parole/courts/juvenile justice/social welfare) and its potential substantive and ethical utility and challenges.
+The goal of the health informatics course is to provide nursing students with the basic data analytic and database management skills for health informatics. Focus will be on the design and implementation of data repositories or healthcare systems (e.g. patient healthcare information) which meet the needs of different constituents of the industry (e.g., patients, doctors, insurance companies, etc.) and maintain the privacy and security of the data. Ethical issues and standards on security management in the development of healthcare systems will be considered. 
+ 
+\paragraph{Chemical and Biological Engineering:}
+Framework integration in Chemical and Biological Engineering will focus on teaching students modern computational languages and techniques, with a particular emphasis on teaching the fundamentals of Machine Learning (ML) big data analysis. The development of fast and efficient experimental techniques allows for the generation of large amounts of data. Using ML methods allows for identify and extract patterns and relationships that are sometimes hidden in the large amount of information. Specific project examples for use in both existing classes for capstone projects in the CBE Senior Seminar include the identification of phase transitions and outlining phase diagrams\cite{cbe1}, location pollution sources in aquifers~\cite{cbe2}, and understanding the mutation signatures leading to cancers~\cite{cbe3}.
 
-\subsection{Nursing}
-\label{sec:research:nursing}
-At NMSU, we will offer two courses on data analytics (DA) for criminal justice and one introductory course to health informatics for nursing students. 
-
-\textcolor{blue}{(from Huiping/Son)  At NMSU, we will offer one module on introductory computing concepts, which can be integrated into an introductory course in health informatics or other disciplines.  
-This module will provide understanding of how computers work, and practical application and programming experience in using computers to solve problems. It will cover broad aspects of the hardware and software of computers. Labs will be developed stressing the use of computers in investigating and reporting on data-intensive scientific problems. Experiences in  major software applications includes an introduction to programming, word processing, spreadsheets, databases, presentations, and Internet applications will be emphasized. 
-}
-
-
-\textcolor{blue}{The goal of the health informatics course is to provide nursing students with the basic data analytic and database management skills for health informatics. Focus will be on the design and implementation of data repositories or healthcare systems (e.g. patient healthcare information) which satisfy the needs of different constituents of the industry (e.g., patients, doctors, insurance companies, etc.) and maintain the privacy and security of the data. Ethical issues and standards on security management in the development of healthcare systems will be considered. }
-
-\subsection{Chemical and Biological Engineering}
-\patrick{Need to revise this to integrate appropriately and identify approprate questions for Mitko.}
-
-Modern computational techniques emerge a basic tool in science and engineering. A better understanding of these techniques is of paramount importance to the new generations of chemical and biological engineering by helping the to solve current problems related to the current societal needs for renewable energy, clean water, new materials, developing faster and better diagnostic techniques, as methods for targeted and efficient drug delivery, among others. 
-
-It is not surprising therefore that a better computational literacy will be extremely helpful in attacking these problems. Undergraduate students in chemical and biological engineering will benefit from learning modern computational languages that are used in science and engineering for modeling and data analysis such as MATLAB, Python C++ (the list is subject to extension and review). In addition, the students will be trained in basic algorithms for integration, solving differential equations, and optimization. 
-
-A particular emphasis will be placed on teaching the fundamentals of Machine Learning (ML) big data analysis. The development of fast and efficient experimental techniques allows for the generation of large amounts of data. Using ML methods allows for identify and extract patterns and relationships that are sometimes hidden in the large amount of information. Specific examples include the identification of phase transitions and outlining phase diagrams1 (typically an extremely laborious process), location pollution sources in aquifers2, understanding the mutation signatures leading to cancers.3 But the applicability of ML approach is broader, and the next generation of computationally literate students will extend the application field and contribute to the further development of the method. Hence, arming the students with the computational tools that will allow to face and solve such problems will help their professional careers, and will be a great benefit to society. 
-
-1.	L. Li, Y. Yang, D. Zhang, Z.-G. Ye, S. Jesse, S. V. Kalinin, and R. K. Vasudevan, Machine learning–enabled identification of material phase transitions based on experimental data: Exploring collective dynamics in ferroelectric relaxors, Science Advances, 4 (2018) eaap8672.
-2.	V. G. Stanev, F. L. Iliev, S. Hansen, V. V. Vesselinov, and B. S. Alexandrov, Identification of release sources in advection–diffusion system by machine learning combined with Green’s function inverse method, Applied Mathematical Modelling, 60 (2018) 64-76.  
-3.	L. B. Alexandrov, S. Nik-Zainal, D. C. Wedge, P. J. Campbell, M. R. Stratton, Deciphering signatures of mutational processes operative in human cancer, Cell Rep., 3 (2013) 246-259.
 
 %DA for criminal justice I will cover the introductory materials of the above topics. DA for criminal justice II will cover more advanced materials of the above topics. 
 
-\subsection{Psychology}
-\label{sec:research:psy}
+\paragraph{Business Technology \& Management:}
+%The Department of Business Technology and Management is a hybrid of business and engineering. Students get a comprehensive experience in market research, conceptual and analytical skills, and technology, partnering with industrial sponsors for real-life management projects. 
+For business majors, data is a crucial resource that, if exploited via appropriate algorithms, can result in competitive advantage through the design and implementation of profitable business plans and sound executive decision making. As technology evolves and myriad data becomes available, canned 'apps' are not enough: data needs to be explored by 'analysts' and the most efficient algorithms discovered or
+devised; deployment of inefficient algorithms can lead to severe losses.  As is well-known, the use of an algorithm named ORION for routing of UPS's trucks in 55,000 routes was estimated to have saved by the end of 2016 10 million gallons of fuel, 100,000 metric tons in CO2 emissions and an estimated \$300 to \$400 million in cost avoidance\footnote{\url{https://www.ups.com/us/en/services/knowledge-center/article.page?name=orion-the-algorithm-proving-that-left-isn-t-right&kid=aa3710c2}}. Already in today's world of digital business, the pricing of consumer products, electricity, airline tickets are all governed by algorithms.
 
-\subsection{Business Technology \& Management}
-The Department of Business Technology and Management is a hybrid of business and engineering. Students get a comprehensive experience in market research, conceptual and analytical skills, and technology, partnering with industrial sponsors for real-life management projects. 
+At NMT, we will offer a new \textit{Computational Approaches for Digital Business} for juniors and seniors in Business and Technology Management. Students can take this course after they complete an introductory computer science course, \textit{Introduction to Programming in Python (CSE107)}, as well as an introductory business technology and management course with computing course modules embedded. The course will start by implementing successive approximation algorithms such as the Newton-Raphson method for finding roots. The next module will consist of data stream summarization problems such as finding the minimum, maximum, histogram, and the frequency of certain data items continuously given an unending stream of data. Next, the course will cite well-known problems like the inventory storage problem, the allocation problem, and the transportation problem to start discussion on approaches to algorithmic solutions including the intuitive greedy algorithms, dynamic programming, and linear programming.  Students will use Python to experimentally determine 
+problem sizes that appear to set limits to practical solvability. Next, the course will consider a decision making process which involves individuals pursuing conflicting interests, introducing Game theory and the minimax principle leading to algorithms for solving simultaneous linear equations and finally converting a game problem  into linear programming thus re-using the programs developed earlier. Finally, it will cover a machine learning problem: either binary classification of data by building a decision tree experimenting with entropy functions or creating an unsupervised cluster of similar patterns by a $k$-means algorithm experimenting with the ramifications of the initial step.
+
+\paragraph{Psychology:}
+At NMT, we also aims to integrate computer science education into psychology by offering a new \textit{Computational Neuroscience} course for juniors and seniors in Psychology. Students can take this course after they complete an introductory computer science course, \textit{Introduction to Programming in Python (CSE107)}, as well as an introductory psychology course with computing course modules embedded.
