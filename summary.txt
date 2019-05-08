@@ -1,0 +1,25 @@
+The three New Mexico (NM) research universities propose the \emph{New Mexico Interdisciplinary X + CS (NMIX+CS)} program, a Networked Improvement Community focused on the integration of computer science into undergraduate programs at their institutions. This NIC will create a set of mutually supporting interdisciplinary programs for students seeking to add a computational component to their undergraduate non-computing degree. The program will include a combination of educational approaches, mentoring and recruitment activities, and inter-institutional collaborations designed to research the best way to support computing education for New Mexico students.
+
+Effectively supporting computing education for and by diverse populations is a key goal of our proposed effort; this is vital because the three institutions in the community have diverse characteristics and student populations. The project includes a diverse set of disciplines at the three institutions in which we will pilot integrating computational techniques, ranging from Nursing to Psychology to Biomedical Engineering. This will enable the assessment of a range of educational approaches to best address the diverse educational needs and student populations in these programs.
+
+The overall educational approach is based on a flexible curriculum that provides multiple mechanisms to instruct students in learning computer science skills in the context of their discipline. This includes:
+  * Course modules for introductory non-CS discipline classes that expose students to computing concepts in the context of the host discipline;
+  * Introductory CS courses for non-CS majors that teach students them to use CS techniques to solve problems in multiple non-CS disciplines;
+  * Computing strands on computational techniques, problem solving, and computing ethics  to build mastery of key computer science topics; and
+  * Discipline-specific ``X + CS'' projects that can be integrated into CS classes that target CS-literate discipline practitioners or discipline-specific capstone classes.
+The results of these educational approaches will be measured through an internal evaluation process, and an external advisory board will assess the results of these evaluations to improve the program.
+
+These instruments and evaluations will be augmented by multiple mechanisms to recruit and support a diverse population of non-CS students with the overall goal of broadening participation in computing. This includes program-specific faculty and peer mentoring, of existing student support and STEM student services, and integration exiting programs for recruiting and supporting students from traditionally underrepresented groups. In addition, the NMIX+CS NIC includes sharing of courses, course materials, assessment results, and best practices and experiences to increase the collective impact of the proposed educational and broadening participation activities.
+
+* Intellectual Merit
+NMIX+CS encompasses four key contributions of intellectual merit:
+  * An overall framework for integrating Computer Science Education into other STEM and non-STEM discipline curricula;
+  * Pilot integrations of this framework into a diverse set of disciplines and 
+  * Discipline-specific computing ethics modules for integration into discipline courses
+  * Systematic assessment and evaluation of these elements
+
+* Broader Impacts
+The proposed educational program will also have significant broader impacts:
+  * New educational programs that broaden participation in computing by providing  training to students that might not otherwise consider CS as a viable or interesting option;
+  * A more diverse workforce that is better prepared to tackle modern inter-disciplinary challenges, using cutting-edge computing technologies;
+  * Creation of a state-wide community of practice focused on X+CS education and an infrastructure to enable the sharing of curricula and classes among the three participating institutions. 
